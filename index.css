@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 10px;
+    animation: change 10s infinite;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+table{
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 450px;
+    margin-top: 100px;
+}
+#newsletter{
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact{
+    height: 100vh;
+}
+#table.display{
+    display: block;
+}
+#subtext2.disp{
+    display: block;
+}
+#table.display{
+    display: block;
+}
+#contact{
+    background-color: #ad3e5f
+}
+.container{
+    width: 800px;
+    height: 450px;
+    background: #ad3e54;
+    padding: 10px;
+    margin-top: 50px;
+}
+.name{
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 387px;
+}
+.contactemail{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin-block: 5px;
+}
+textarea{
+    border: none;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 300px;
+}
+.inemail{
+    padding: 10px;
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 5px;
+}
+::placeholder{
+    color: black;
+}
+.card{
+    background-color: #447bf1;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+tr{
+    padding: 10px;
+}
+th{
+   font-size: 20px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    animation: change 10s infinite;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid white;
+    text-align: center;
+    animation: color 10s infinite;
+    font-size: larger;
+}
+@keyframes color {
+    0%{
+        color: white;
+        border: 2px solid white;
+    }
+    100%{
+        color: black;
+        border: 2px solid black;
+    }
+}
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    color: white;
+    animation: change 10s infinite;
+}
+@keyframes change {
+    100%{
+        background-color: #fff;
+        color: black;
+    }
+    0%{
+        background-color: #000;
+        color: #fff;
+    }
+}
+#about{
+    height: 100vh;
+    background: #adff2f;
+}
+#about h1{
+    color: black;
+}
+.dash{
+    display: none;
+}
+.subtext{
+    font-size: 30px;
+    font-weight: bold;
+}
+.name{
+    color: crimson;
+}
+#home p{
+    text-align: center;
+    font-size: 30px;
+    color: #ad3e54;
+}
+h1{
+    font-size: 100px;
+    color: #ad3e54;
+
+}
+@media(max-width:676px){
+    h1{
+        font-size: 70px;
+    }
+    ul{
+        font-size: medium;
+    }
+    button{
+        font-size: medium;
+    }
+}
+@media(max-width:526px){
+    button{
+        width: 100%;
+    }
+}
+@media(max-width:498px){
+    h1{
+        font-size: 50px;
+    }
+    #home p{
+        font-size: 18px;
+    }
+    .dash{
+        display: block;
+    }
+    ul.show{
+        display: block;
+        animation: change 3s infinite;
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        margin-top: 50px;
+        transform: 4s;
+    }
+    ul{
+        display: none;
+    }
+}
+@media(max-width:803px) {
+    .container .name{
+        width: 100%;
+        margin-block: 5px;
+    }
+    .subtext{
+        font-size: medium;
+    }
+    #about button{
+        font-size: medium;
+    }
+    .container{
+        width: 500px;
+        height: 300px;
+        text-align: center;
+        margin-left: 200px;
+    }
+    textarea{
+        height: 100px;
+    }
+}
+@media(max-width:757px){
+    .container{
+     width: 400px;
+    }
+}
+@media(max-width:726px){
+    .container{
+     margin-left: 0px;
+    }
+}
+@media(max-width:400px){
+    .container{
+     width: 300px;
+    }
+}
+
+
+
+

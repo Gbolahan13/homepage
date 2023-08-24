@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYANWEB|HOMEPAGE</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>RYANWEB</h2>
+            <ul id="ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <span class="dash" onclick="show()">&#9776;</span>
+        </nav>
+    </header>
+    <main id="home">
+        
+       <div>
+        <h1>Welcome To 
+            <br>RYANWEB</h1>
+            <p>We Give You The Best</p>
+            <a href="Topics.html"><button>Enter</button></a>
+            <br><br>
+            <a href="#about"><button>View Features</button></a>
+       </div>
+    </main>
+    <main id="about">
+        <h1 align="center">About Us</h1>
+        <p class="subtext">The developer of this website name is <br><span class="name">Adeniyi Gbolahan</span>
+        I have an extensive experience of 15 years.
+        <p class="subtext">I am a Freelancer,Youtuber,gamer</p>
+        <button onclick="readmore()" style="width: 20%;">See More</button>
+        <table border="1" style="display: none;" id="table">
+            <tr class="row1">
+                <th>Phone</th>
+                <th>07043630728</th>
+            </tr>
+            <tr>
+                <th>Email Address</th>
+                <th>adeniyigbolahan068@gmail.com</th>
+            </tr>
+        </table>
+        </p>
+        <p class="subtext" id="subtext2" style="display: none;">In this website you can make your own channel to 
+           <br> teach programming and get followers for your channel <br>
+            and you can also learn what they teach.
+        </p>
+    </main>
+    <main id="newsletter">
+        <div class="card">
+            <h2>Subscribe To Our Newsletter for information <br>
+                 when there is any update on the website.
+                 <br>
+                 <input type="text" placeholder="Name" class="inemail">
+                <input type="email" placeholder="Email Address" class="inemail">
+            </h2>
+        </div>
+    </main>
+    <main id="contact">
+        <h2 align="center">Contact Us</h2>
+        <div class="container">
+            <input type="text" placeholder="Firstname..." class="name">
+            <input type="text" placeholder="Lastname..." class="name">
+            <input type="email" placeholder="Email Address" class="contactemail">
+            <textarea placeholder="Send us message..."></textarea>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script>
+        function readmore(){
+            document.getElementById("table").style.display="block";
+            document.getElementById("subtext2").style.display="block";
+        }
+        function show(){
+            document.getElementById("ul").classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
